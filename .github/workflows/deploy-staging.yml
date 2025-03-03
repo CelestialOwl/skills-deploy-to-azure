@@ -54,8 +54,8 @@ jobs:
         uses: docker/login-action@v3
         with:
           registery: ${{ env.IMAGE_REGISTERY_URL }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.CR_PAT }}
+          username: celestialowl
+          password: ${{ secrets.docker_pat }}
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
