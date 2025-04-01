@@ -81,7 +81,7 @@ jobs:
         uses: azure/login@V2
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-      - uses: azure/docker-login@v1
+      - uses: azure/docker-login@v2
         with:
           login-server: ${{env.IMAGE_REGISTERY_URL}}
           username: ${{github.actor }}
